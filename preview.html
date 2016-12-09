@@ -132,11 +132,7 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-<?php
-add_action( 'loop_start', 'on_front_logged_in' );
-function on_front_logged_in() {
-if ( is_user_logged_in() ) {
-?>
+
 <div id="on_front_logged_in">
 <a href="<?php echo esc_url( admin_url( '/' ). 'profile.php' ); ?>" target="_self" id="profile" title="My Profile"><button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
   <i class="material-icons"">account_circle</i>
